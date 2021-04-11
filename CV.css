@@ -1,0 +1,169 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /*====Google Fonts======*/
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+  
+  /*====VARIABLES CSS
+  
+    /*===== Colors =====*/
+  :root{
+      --first-color: #c9cbd1;
+      --second-color: #030405;
+    }
+    
+  
+  /*===== Fuente y tipografia =====*/
+  :root{
+      --body-font: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      --big-font-size: 2rem;
+      --h2-font-size: 1.25rem;
+      --normal-font-size: 0.938rem;
+  
+    }
+  
+    @media screen and (min-width: 768px){
+      :root{
+        --big-font-size: 3.5rem;
+        --h2-font-size: 2rem;
+        --normal-font-size: 1rem;
+      }
+    }
+  /*===== Margenes =====*/
+  :root{
+      --mb-1: 0.5rem;
+      --mb-2: 1rem;
+      --mb-3: 1.5rem;
+      --mb-4: 2rem;
+      --mb-5: 2.5rem;
+      --mb-6: 3rem;
+    }
+    
+    html{
+      scroll-behavior: smooth;
+    }
+    body{
+      margin:0px;
+      font-family: var(--body-font);
+      font-size: var(--normal-font-size);
+      color: var(--second-color);
+      line-height: 2rem;
+    }
+  
+    h1,h2,h3,p{
+      margin: 0;
+    }
+    .text-profile h2{
+      margin-left: 2rem ;
+  
+    }
+    ul{
+      margin-left: 10px;
+      padding-bottom: var(--mb-2);
+      line-height: var(--mb-4);
+  
+    }
+    a{
+      text-decoration: none;
+    }
+  
+    section{
+      margin-top: 20px;
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+  
+  
+    /*===== personal info ======*/
+    header.personal-info{
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin-top: 2rem;
+  
+  }
+  
+  
+  
+  /*======Info Data ========*/
+  h3.intro{
+    
+    text-decoration:none;
+  }
+  
+  h3 a{
+    color: gray;
+  }
+  
+  /*===== profile =====*/
+  .section-header-label{
+    width: 100%;
+    line-height: var(--mb-5);
+    padding-left: 10px;
+    background-color: var(--second-color);
+    color: #ffffff;
+    margin-top: 2%;
+  }
+  .profile-title{
+      font-size: 1.5rem;
+      margin-top: var(--h2-font-size);
+  }
+  .profile{
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+      padding-bottom: var(--mb-1);
+      line-height: var(--mb-4);
+      
+  }
+  
+  /*===== profile=====*/
+  .text-profile{
+      display: -moz-grid;
+  }
+  
+  .skill-type{
+    font-weight: bold;
+    margin: 0.5rem;
+  
+  }
+  
+  ul.skill-list,ul{
+    margin-left: 3rem; 
+  
+  }
+  
+  .sub-section-header-label{
+      width: 100%;
+      line-height: var(--mb-5);
+      padding-left: 10px;
+      background-color: var(--first-color);
+      color:var(--second-color);
+      margin-top: 8px;
+      padding-top: 10px;
+  
+  }
+  
+  .skill-list{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    
+  }
+  
+  /*=====Media Querry=====*/
+  @media all and (max-width:768px){
+    .skill-list{
+      -webkit-column-count: 1;
+      -moz-column-count: 1;
+      column-count: 1;
+      
+    }
+  
+  }
+  
+  
